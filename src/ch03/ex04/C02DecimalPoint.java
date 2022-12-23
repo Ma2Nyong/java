@@ -18,3 +18,4 @@ public class C02DecimalPoint {
 		System.out.println(shortPi);
 	}
 }
+// 실수의 무한성을 극복하기 위해.

@@ -14,3 +14,4 @@ public class C01Assign {
 		System.out.println(i);
 	}
 }
+//할당 연산자 계산순서는 오른쪽에서 왼쪽이다.

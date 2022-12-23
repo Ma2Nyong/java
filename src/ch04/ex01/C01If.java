@@ -10,6 +10,5 @@ public class C01If {
 		
 		if(visitCnt < 1 ) 
 			System.out.println("첫방문입니다.");
-		
 	}
 }

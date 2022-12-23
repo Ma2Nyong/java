@@ -10,4 +10,4 @@ public class C01Ternary {
 		
 		System.out.println(absY + "," + absY);
 	}
-}
+}// 절댓값을 표시하는 알고리즘.

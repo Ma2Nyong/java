@@ -7,3 +7,4 @@ public class C02Grade {
 		System.out.println(grade);
 	}
 }
+//삼항 연산자
