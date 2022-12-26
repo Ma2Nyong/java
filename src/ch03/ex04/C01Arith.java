@@ -13,7 +13,11 @@ public class C01Arith {
 		c++;
 		System.out.println(c);
 		
-		double d = (double)a / b;
+		double d = a / b; //int type이라서 1.0이라는 값이 나온다.
+		System.out.println(d);
+		
+		//과제 :d 변수에 1.5가 저장되도록하라.
+		d = (double)a / b;
 		System.out.println(d);
 		d = 1.0 * a / b;
 		System.out.println(d);

@@ -3,11 +3,11 @@ package ch03.ex08;
 public class Logical {
 	public static void main(String[] args) {
 		boolean b = false;
-		
+		//논리 연산자
 		b = true && true;
 		b = (2 > 1) && (2 > 1);
-		b = 2 < 1 && 2 > 1 ; // false
-		b = 2 < 1 || 2 > 1; // or 연산자
+		b = 2 < 1 && 2 > 1 ; // AND 연산자.
+		b = 2 < 1 || 2 > 1; // OR 연산자.
 		b = 2 < 1 || 2 < 1;
 		System.out.println(b);
 		

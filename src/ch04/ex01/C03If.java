@@ -12,8 +12,8 @@ public class C03If {
 			System.out.println("Good evening.");
 		} else {
 			System.out.println("Good night.");
-		}
-		
+		} // if는 베타적이라 하나만 사용된다.
+		// 계산하는 순서는 위에서부터 아래로 내려온다.
 		// 과제: ~println() 을 한번만 사용하라. code 7 ~ 15 Line을 개선해라.
 		
 		String bow = "";

@@ -6,25 +6,26 @@ public class Grade {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int score = 0;
+		int tenDigit = 0;
+		int oneDigit = 0;
+		String grade = "";
 		
 		System.out.print("점수: ");
 		score = sc.nextInt();
 		
-		if(score >= 90) {
-			String grade = "";
-			if(score >= 98) grade = "A+";
-			else if(score >= 94) grade = "A";
-			else grade = "A-";
-			System.out.println(grade);
+		tenDigit = score / 10;
+		oneDigit = score % 10;
+		
+		if(tenDigit >= 9) grade = "A";
+		else if(tenDigit >= 8) grade = "B"; // tenDigit == 8 이라고 작성해도 되나, 가독성이 떨어진다.
+		else grade = "C";
+		
+		if(score >= 80) {
+			if(oneDigit >= 8 || tenDigit == 10) grade += "+";
+			else if(0 <= oneDigit && oneDigit < 4) grade += "-";
 		}
-		else if (score >= 80) {
-			String grade = "";
-			if(score >= 88) grade = "B+";
-			else if(score >= 84) grade = "B";
-			else grade = "B-";
-			System.out.println(grade);
-		}
-		else { System.out.println("C");}
+		
+		System.out.println(grade);
 	}
 }
 /*
