@@ -20,6 +20,6 @@ public class Main {
 		System.out.printf("%d시 %d분 %d초\n", time2.hour, time2.minute, time2.second);
 		
 		System.out.println(time);
-		System.out.println(time2.toString());
+		System.out.println(time2.toString());//모든객체에는 toString이 있다.
 	}
 }

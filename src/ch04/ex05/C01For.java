@@ -4,7 +4,7 @@ public class C01For {
 	public static void main(String[] args) {
 		for(int i = 0; i < 10; i++) { // int i  변수 선언, 옆에 false가 되면 빠져나온다.
 			System.out.print("*");
-		}
+		}//반복의 범위와 시작과 끝을 알때 사용.
 		System.out.println();
 		
 		for(int i = 0; i < 10; i++)

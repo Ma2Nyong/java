@@ -1,12 +1,12 @@
 package ch05.ex01.case03;
 
 public class User {
-	private String userName;
+	private String userName; // encapsulation 캡슐화.
 	private int age;// private = 나만 볼꺼야, 감춘다
 	
 	public void setUserName(String userName) { //메소드 선언문 보이고, 메소드 바디는 투명,
 		this.userName = userName;
-	}//this는 객체이고 유저타입의객체가 들어간다.
+	}//this는 객체이고 유저타입의객체가 들어간다. User this, String userName.
 	
 	public void setAge(int age) {
 		this.age = age;
@@ -14,7 +14,7 @@ public class User {
 	
 	public String getUserName() { //ppt 제작할때 쓴다..
 		return this.userName;
-	}
+	}//this. 을 생략해도 문제없다. 위에코드는 생략하면 안된다.
 	
 	public int getAge() {
 		return this.age;
@@ -23,3 +23,4 @@ public class User {
 //return 값이 없기에 void,// 동사인 set + parameter.
 // 리턴타입 메소드네임 
 //transparency
+//domain 울타리

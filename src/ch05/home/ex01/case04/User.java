@@ -5,30 +5,29 @@ import java.time.LocalDate;
 public class User { 
 	private String userName;
 	private int age;
-	private LocalDate signupDate;
+	private LocalDate regDate;
 	
-	public void setUserName(String userName) { 
+	public String getUserName() {
+		return userName;
+	}
+	
+	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+	
+	public int getAge() {
+		return age;
 	}
 	
 	public void setAge(int age) {
 		this.age = age;
 	}
 	
-	public void signupDate(LocalDate signupDate) { 
-		this.signupDate = signupDate;
+	public LocalDate getRegDate() {
+		return regDate;
 	}
 	
-	public String getUserName() {
-		return this.userName;
+	public void setRegDate(LocalDate regDate) {
+		this.regDate = regDate;
 	}
-	
-	public int getAge() {
-		return this.age;
-	}
-	
-	public LocalDate signupDate() {
-		return this.signupDate;
-	}
-	
 }

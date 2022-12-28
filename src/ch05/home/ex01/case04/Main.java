@@ -3,38 +3,43 @@ package ch05.home.ex01.case04;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-import ch05.ex01.case03.User;
+import ch05.home.ex01.case04.User;
 
 public class Main {
 	public static void main(String[] args) {
+		String userName = "";
+		int age = 0;
+		LocalDate regDate = null;
+		
 		Scanner sc = new Scanner(System.in);
-		User user = new User();
-		String input = "";
+		String tmp = "";
 		boolean isGood = false;
 		
 		do {
-			do {
-				isGood = false;
-				System.out.print("이름: "); input = sc.nextLine();
-				isGood = input.matches(" ");
-				if(!isGood) System.out.print("ERROR] text only\n");
-				else user.setUserName(input);
-			} while(isGood);
-			
-			do {
-				isGood = false;
-				System.out.print("나이: "); input = sc.nextLine();
-				isGood = input.matches("[0-9]+");
-				if(isGood) user.setAge(Integer.parseInt(input));
-				else System.out.print("ERROR] number only\n");
-			} while(!isGood);
-			
-			LocalDate signupDate = LocalDate.now();
-			
-			System.out.printf("이름: %s\n나이: %d\n가입일: %s ",user.getUserName(), user.getAge(), signupDate);
-			
+			System.out.print("이름: ");
+			userName = sc.nextLine();
+			isGood = userName.matches("[a-zA-Z가-힣]+");
+			if(!isGood) System.out.print("ERROR] 이름을 입력해주세요.");
 		}while(!isGood);
 		
+		do {
+			isGood = false;
+			System.out.print("나이: ");
+			tmp = sc.nextLine();
+			isGood = tmp.matches("[0-9]+");
+			if(isGood) age = Integer.parseInt(tmp);
+			else System.out.print("ERROR] 나이를 입력해주세요.");
+		}while(!isGood);
+		
+		regDate = LocalDate.now();
+		
+		User user = new User();
+		user.setUserName(userName);
+		user.setAge(age);
+		user.setRegDate(regDate);
+		
+		System.out.printf("\n이름: %s\n나이: %d\n가입일: %s ",
+				user.getUserName(), user.getAge(), user.getRegDate());
 	}
 }
 /*가입일: %d
