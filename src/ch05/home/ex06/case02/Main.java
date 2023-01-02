@@ -1,7 +1,5 @@
 package ch05.home.ex06.case02;
 
-import ch05.ex06.case02.Console;
-
 public class Main {
 	public static void main(String[] args) {
 		Console.inStr("문자를 입력하세요.");
