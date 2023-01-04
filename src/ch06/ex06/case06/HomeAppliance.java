@@ -1,0 +1,9 @@
+package ch06.ex06.case06;
+
+import ch06.ex06.case04.Appliance;
+import ch06.ex06.case05.Electronic;
+
+public interface HomeAppliance extends Appliance, Electronic {
+
+}
+// interface 가 interface를 상속받을때는 extends를 쓴다.

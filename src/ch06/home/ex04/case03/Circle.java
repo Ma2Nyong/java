@@ -9,6 +9,7 @@ public class Circle {
 		this.r = r;
 	}
 	
+	@Override
 	public String toString() {
 		return String.format("%s, %d", this.point, this.r);
 	}
