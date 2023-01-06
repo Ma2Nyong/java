@@ -14,7 +14,7 @@ public class DoubleArray {
 		System.out.println("-------------------------------");
 		
 		for(int i = 0; i < scores.length; i++) {
-			int sum = 0;
+			int sum = 0;//각각의 row
 			
 			System.out.print(" " + (i + 1) + " ");
 			for(int j = 0; j < scores[0].length; j++) {
