@@ -1,7 +1,7 @@
 package ch08.ex02.case05;
 
 public enum Level {
-	GOLD(3, null), SILVER(2, GOLD), COPER(1, SILVER);
+	GOLD(3, null), SILVER(2, GOLD), COPPER(1, SILVER);
 	
 	private final int value;
 	private final Level next;

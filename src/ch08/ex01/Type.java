@@ -5,8 +5,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-//unotation? 
-@Retention(RetentionPolicy.SOURCE) // class에는 없고 java에만 있다?
+@Retention(RetentionPolicy.SOURCE) // annotation, class에는 없고 java에만 있다?
 @Target(ElementType.TYPE) //
 public @interface Type {
 	String name();
@@ -24,7 +23,6 @@ public @interface Type {
 @interface Constructor {
 	int value() default 0;
 }
-
 
 //@Retention(RetentionPolicy.CLASS)
 @Target(ElementType.METHOD)
